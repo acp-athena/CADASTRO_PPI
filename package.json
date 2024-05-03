@@ -1,0 +1,17 @@
+{
+  "name": "cadastro_ppi",
+  "version": "1.0.0",
+  "description": "Atividade 2 da matéria Programação para a internet (Um cadastro de filmes)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Ana Carolina Almeida Paula",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "path": "^0.12.7"
+  }
+}

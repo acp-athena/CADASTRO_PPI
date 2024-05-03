@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Filme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d;
+            color: #fff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #5a6268;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .form-control {
+                width: calc(100% - 20px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastrar filme</h1>
+    <form method="get" action="/cadastro">
+        <div class="col-md-4">
+            <label for="nome" class="form-label">Nome do filme:</label>
+            <input type="text" class="form-control" id="nome" name="nome" required>
+        </div>
+        <div class="col-md-4">
+            <label for="genero" class="form-label">Genêro do filme:</label>
+            <input type="text" class="form-control" id="genero" name="genero" required>
+        </div>
+        <div class="col-md-4">
+            <label for="data" class="form-label">Data de lançamento:</label>
+            <input type="date" class="form-control" id="data" name="data" required>
+        </div>
+        <div class="col-md-6">
+            <label for="nota" class="form-label">Nota</label>
+            <input type="number" class="form-control" id="nota" name="nota" required>
+        </div>
+        <div class="col-12 mb-3">
+            <button class="btn btn-primary" type="submit">Cadastrar</button>
+            <a class="btn btn-secondary" href="/">Voltar</a>                   
+        </div>
+    </form>
+</body>
+</html>
