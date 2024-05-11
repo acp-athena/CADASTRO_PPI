@@ -4,23 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cyborg/bootstrap.min.css" integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-
         .container {
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
         }
 
-        h1 {
-            text-align: center;
-            color: #333;
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
         .menu {
@@ -44,14 +40,20 @@
             background-color: #00264e;
         }
 
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+        }
+
     </style>
 </head>
 <body>
     <div class="container">
-    <h1>Menu de opções</h1>
-    <br/>
-    <button class="menu"><a href="cadastro.html">Cadastrar Filme</a></button>
-    <button class="menu"><a href="/listarFilmes">Listar Filmes Cadastrados</a></button>
+        <h1>Menu de opções</h1>
+        <br/>
+        <button class="btn menu"><a href="cadastro.html">Cadastrar Filme</a></button>
+        <button class="btn menu"><a href="/listarFilmes">Listar Filmes Cadastrados</a></button>
     </div>
 </body>
 </html>

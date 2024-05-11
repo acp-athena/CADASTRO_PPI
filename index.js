@@ -22,14 +22,14 @@ app.use('/cadastro', (req,resp)=>{
     });
     resp.write('<html>');
     resp.write('<head>');
-    resp.write('<title>Cadastro retorno</title>');
+    resp.write('<title>Cadastro</title>');
     resp.write('<meta charset="utf-8">');
-    resp.write('<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">')
+    resp.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cyborg/bootstrap.min.css" integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous">')
     resp.write('</head>');
     resp.write('<body>');
     resp.write('<div>')
-    resp.write(`<h1>Filme ${nome} cadastrado com sucesso!</h1>`);
-    resp.write('<button class="opcao"><a href="/cadastro.html">Cadastrar filme</a></button>');
+    resp.write(`<h1 style="text-align: center">Filme ${nome} cadastrado com sucesso!</h1>`);
+    resp.write('<button class="opcao"><a href="/cadastro.html">Cadastrar novo filme</a></button>');
     resp.write("<br/>");
     resp.write('<button class="opcao"><a href="/listarFilmes">Listar filmes cadastrados</a></button>');
     resp.write('</div>')
@@ -43,7 +43,7 @@ app.use('/listarFilmes', (req,resp)=>{
     resp.write('<head>');
     resp.write('<title>Lista filmes</title>');
     resp.write('<meta charset="utf-8">');
-    resp.write('<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">')
+    resp.write('<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/cyborg/bootstrap.min.css" integrity="sha384-nEnU7Ae+3lD52AK+RGNzgieBWMnEfgTbRHIwEvp1XXPdqdO6uLTd/NwXbzboqjc2" crossorigin="anonymous">')
     resp.write('</head>');
     resp.write('<body>');
     resp.write('<h1>Lista de Filmes</h1>');
